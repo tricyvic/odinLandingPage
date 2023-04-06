@@ -7,6 +7,11 @@ body{
     display: flex;
     flex-direction: column;
 }
+body > div{
+    padding-left: 15pc;
+    padding-right: 15pc;
+    
+} 
 .nav{
     display: flex;
     justify-content: space-between;
@@ -21,6 +26,7 @@ body{
     gap: 20px;
 }
 .hero,.footer{
+    
     background-color: #1F2937;
     color: #E5E7EB;
 }
@@ -33,7 +39,7 @@ body{
     font-size: 24px;
     color: #F9FAF8;
 }
-button,.right-contact{
+button,.modal{
     background-color: #3882f6;
     border: none;
 }
@@ -45,4 +51,15 @@ button,.right-contact{
     background-color: #E5E7EB;
     color: #1F2937;
     font-style: italic;
+}
+.contact{
+    flex-direction: column;
+}
+.contact,.quote,.footer,.info ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    height: 50px;
 }
