@@ -3,15 +3,18 @@
 }
 body{
     margin: 0;
-    height: 100vh;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 body > div{
     padding-left: 15pc;
-    padding-right: 15pc;
-    
-} 
+    padding-right: 15pc;   
+}
+.hero{
+    padding-bottom: 50px;
+}
+
 .nav{
     display: flex;
     justify-content: space-between;
@@ -22,8 +25,16 @@ body > div{
 }
 .header{
     display: flex;
-    align-items: baseline;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
     gap: 20px;
+    padding-bottom: 20px;
+}
+.header img{
+    border-radius: 0;
+    width: 65vh;
+    height: 30vh;
 }
 .hero,.footer{
     
@@ -43,23 +54,73 @@ button,.modal{
     background-color: #3882f6;
     border: none;
 }
+.sign-up{
+    border-radius: 5px;
+    font-weight: 500;
+    color: white;
+}
+.first-b{
+    padding: 5px 20px 5px;
+}
+.second-b p{
+    padding: 5px 25px 5px;
+    border-radius: 5px;
+    border: solid #E5E7EB 2px ;
+}
 .info h2{
+    padding: 25px;
+    text-align: center;
     font-size: 36px;
     color: #1F2937;
 }
+.info ul{
+    gap: 25px;
+    text-align: center;
+}
 .quote{
+    padding: 20px;
     background-color: #E5E7EB;
     color: #1F2937;
     font-style: italic;
 }
+.quote-content{
+    width: 25pc;
+}
+.quote-content .p{
+    float: right;
+    font-weight: 700;
+    font-style: normal;
+}
 .contact{
     flex-direction: column;
 }
-.contact,.quote,.footer,.info ul{
+.modal{
+    color: #E5E7EB;
+    display: flex;
+    gap: 150px;
+    padding: 15px 75px 15px;
+    margin: 15vh 0vh 15vh;
+    border-radius: 5px;
+}
+.contact,.quote,.info ul{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .footer{
+    text-align: center;
     height: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 68%;
+    
+}
+img{
+    border-radius: 12%;
+    height: 15pc;
+    width: 15pc;
+}
+
+li img:hover{
+    border: 2px solid #3882f6;
 }
